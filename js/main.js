@@ -47,4 +47,16 @@ document.getElementById('clearHistory').addEventListener('click', function (even
 
 document.getElementById('bigBtn').addEventListener('click', function () {
   window.location.assign('/discover.html')
+});
+
+document.getElementById('randomBtn').addEventListener('click', function () {
+  function randomColor() {
+    let r = Math.floor(Math.random() * 255)
+    let g = Math.floor(Math.random() * 255)
+    let b = Math.floor(Math.random() * 255)
+    return `rgb(${[r, g, b].join(',')})`
+  }
+  const body = document.getElementById('body')
+  body.style.backgroundColor = randomColor()
 })
+

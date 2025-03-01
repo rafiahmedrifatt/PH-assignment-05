@@ -2,28 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DEV || DISCOVER</title>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <header>
+<body class="w-10/12 mx-auto">
+    <header class="my-5">
         <nav class="flex items-center justify-between rounded-lg bg-white">
             <div class="flex items-center mx-6 gap-7">
-                <img src="assets/logo.png" alt="logo">
-                <h1 class="">Dev <span class="font-bold">Board</span> </h1>
+                <img src="assets/logo.png" alt="logo" />
+                <h1 class="">Dev <span class="font-bold">Board</span></h1>
             </div>
             <div class="flex items-center gap-7">
-                <button class="btn btn-primary">BACK TO HOME PAGE</button>
+                <button id="back" class="btn btn-primary">BACK TO HOME PAGE</button>
             </div>
         </nav>
     </header>
-    <script src="js/sharedFunction.js"></script>
+    <main class="mt-10 flex flex-col gap-10">
+        <div class="bg-base-100 border border-base-300 p-5">
+            <h3 class="font-bold">What are the different ways to select an element in the DOM?</h3>
+            <h4 class="text-md">
+                There are many ways to select document, we can select a document using class and id.
+            </h4>
+        </div>
+        <div class="bg-base-100 border border-base-300 p-5">
+            <h3 class="font-bold">What is the difference between innerHTML, innerText, and textContent ?</h3>
+            <h4 class="text-md">
+                The difference between innerHTML, innerText and textContent is, innerHtml is used for getting html file
+                inside an element and innerText is used to get text inside an element and by using textContent we can
+                get text and its child inside an element
+            </h4>
+        </div>
+        <div class="bg-base-100 border border-base-300 p-5">
+            <h3 class="font-bold">What is event delegation in the DOM?</h3>
+            <h4 class="text-md">
+                event delegation is a hack, by using it on your father-in-law, you can handle.. nah it sounds bad.
+                Event delegation is used on parent element to access child element or to modify it
+            </h4>
+        </div>
+        <div class="bg-base-100 border border-base-300 p-5">
+            <h3 class="font-bold">What is event bubbling in the DOM?</h3>
+            <h4 class="text-md">
+                Bubble dom is a behavior, when any event occurs in an element, it not only triggers it but also it
+                propagates upwards.
+            </h4>
+        </div>
+        <div class="bg-base-100 border border-base-300 p-5">
+            <h3 class="font-bold">How do you create, add, and remove elements using JavaScript?</h3>
+            <h4 class="text-md">
+                We can create element by using .createElement(), add element using .appendChild(), remove element by
+                using .remove()
+            </h4>
+        </div>
+    </main>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('back').addEventListener('click', function () {
+            console.log('btn clicked')
+            window.location.assign('index.html')
+        })
+    </script>
 </body>
 
 </html>
