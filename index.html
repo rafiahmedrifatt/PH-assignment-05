@@ -10,142 +10,146 @@
 </head>
 <!-- Body section starts here -->
 
-<body>
+<body class="bg-green-200 m-0 p-0 h-[100vh]">
 
     <!-- HEADER -->
-    <header class="w-10/12 mx-auto my-4">
+    <header class="w-10/12 mx-auto pt-5">
         <!-- NavBar Section -->
-        <nav class="flex items-center justify-between">
-            <div class="flex items-center gap-7">
+        <nav class="flex items-center justify-between rounded-lg bg-white">
+            <div class="flex items-center mx-6 gap-7">
                 <img src="assets/logo.png" alt="logo">
                 <h1 class="">Dev <span class="font-bold">Board</span> </h1>
             </div>
-            <div class="flex gap-7">
-                <h1>23</h1>
-                <button><img src="assets/theme-btn.png" alt=""></button>
+            <div class="flex items-center gap-7">
+                <div class="flex items-center gap-2 p-3 rounded-lg bg-[#F4F7FF]">
+                    <img class="w-5 h-auto" src="assets/checkbox.png" alt="">
+                    <h1 id="navNumber" class="text-xl font-bold">24</h1>
+                </div>
+                <button class="bg-[#F4F7FF] rounded-full"><img class="p-4" src="assets/theme-btn.png" alt=""></button>
             </div>
         </nav>
     </header>
 
     <!-- MAIN -->
 
-    <main class="w-10/12 mx-auto my-4 grid grid-cols-12">
+    <main class="w-10/12 mx-auto my-4 grid grid-cols-12 gap-5">
 
         <section class="col-span-9">
             <!-- Heading Section -->
-            <section class="grid grid-cols-12">
+            <section class="grid gap-5 grid-cols-12">
                 <!-- card 01 -->
-                <div class="flex items-center gap-4 col-span-3">
+                <div class="flex items-center gap-4 bg-[#F4F7FF] rounded-lg p-5 col-span-3">
                     <div>
                         <img src="assets/checkbox.png" alt="">
                     </div>
                     <div>
                         <p>Task Assigned</p>
-                        <h3>05</h3>
+                        <h3 id="taskNumber" class="text-xl font-bold">06</h3>
                     </div>
                 </div>
-                <div class="flex items-center gap-4 col-span-6">
+                <button id="bigBtn"
+                    class="flex items-center justify-around bg-gradient-to-l from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg p-5 col-span-6">
                     <div>
                         <img src="assets/board.png" alt="">
                     </div>
                     <div>
-                        <h3 class="text-3xl m-5">Discover Something <br> New Today!</h3>
+                        <h3 class="text-3xl m-5 text-white font-bold">Discover Something <br> New Today!</h3>
                     </div>
-                </div>
-                <div class="flex items-center gap-4 col-span-3">
+                </button>
+                <div class="flex items-center gap-4 bg-[#F4F7FF] rounded-lg p-5 col-span-3">
                     <div>
                         <img src="assets/calender.png" alt="">
                     </div>
-                    <div class="text-base">
-                        <h4>Day</h4>
-                        <h5>Jul 28 2025 </h5>
+                    <div id="calender" class="text-base">
+                        <p></p>
                     </div>
                 </div>
             </section>
 
             <!-- Cards Section -->
-            <section class="grid grid-cols-3 gap-5">
-                <div class="card card-compact bg-base-100 shadow-xl">
+            <section class="grid grid-cols-3 gap-7 mt-5">
+                <div class="card card-compact bg-[#F4F7FF] rounded-lg p-5 shadow-xl">
                     <button class="btn w-2/4 my-2">ShopEase</button>
                     <h3 class="text-xl my-2">Fix Mobile Button Issue</h3>
-                    <p class="bg-white p-4 rounded-md m-2">Debug using Chrome DevTools, check for overlapping</p>
+                    <p class="bg-white p-4 rounded-lg m-2">Debug using Chrome DevTools, check for overlapping</p>
                     <div class="flex items-center justify-around gap-5 m-4">
                         <div class="text-xs">
                             <p>Deadline</p>
                             <h6>21 March 2025</h6>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="shopease" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-base-100 shadow-xl">
-                    <button class="btn w-2/4 my-2">ShopEase</button>
-                    <h3 class="text-xl my-2">Fix Mobile Button Issue</h3>
-                    <p class="bg-white p-4 rounded-md m-2">Debug using Chrome DevTools, check for overlapping</p>
+                <div class="card card-compact bg-[#F4F7FF] rounded-lg p-5 shadow-xl">
+                    <button class="btn w-2/4 my-2">CloudSync</button>
+                    <h3 class="text-xl my-2">Add Dark Mode</h3>
+                    <p class="bg-white p-4 rounded-lg m-2">Store the user's preference in localStorage, update CSS varia
+                    </p>
                     <div class="flex items-center justify-around gap-5 m-4">
                         <div class="text-xs">
                             <p>Deadline</p>
                             <h6>21 March 2025</h6>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="cloudsync" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-base-100 shadow-xl">
-                    <button class="btn w-2/4 my-2">ShopEase</button>
-                    <h3 class="text-xl my-2">Fix Mobile Button Issue</h3>
-                    <p class="bg-white p-4 rounded-md m-2">Debug using Chrome DevTools, check for overlapping</p>
+                <div class="card card-compact bg-[#F4F7FF] rounded-lg p-5 shadow-xl">
+                    <button class="btn w-2/4 my-2">SwiftPay</button>
+                    <h3 class="text-xl my-2">Optimize Home page </h3>
+                    <p class="bg-white p-4 rounded-lg m-2">Debug using Chrome DevTools, check for overlapping</p>
                     <div class="flex items-center justify-around gap-5 m-4">
                         <div class="text-xs">
                             <p>Deadline</p>
                             <h6>21 March 2025</h6>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="swiftpay" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-base-100 shadow-xl">
-                    <button class="btn w-2/4 my-2">ShopEase</button>
-                    <h3 class="text-xl my-2">Fix Mobile Button Issue</h3>
-                    <p class="bg-white p-4 rounded-md m-2">Debug using Chrome DevTools, check for overlapping</p>
+                <div class="card card-compact bg-[#F4F7FF] rounded-lg p-5 shadow-xl">
+                    <button class="btn w-2/4 my-2">Meta</button>
+                    <h3 class="text-xl my-2">Add new emoji 🤲</h3>
+                    <p class="bg-white p-4 rounded-lg m-2">Debug using Chrome DevTools, check for overlapping</p>
                     <div class="flex items-center justify-around gap-5 m-4">
                         <div class="text-xs">
                             <p>Deadline</p>
                             <h6>21 March 2025</h6>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="meta" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-base-100 shadow-xl">
-                    <button class="btn w-2/4 my-2">ShopEase</button>
-                    <h3 class="text-xl my-2">Fix Mobile Button Issue</h3>
-                    <p class="bg-white p-4 rounded-md m-2">Debug using Chrome DevTools, check for overlapping</p>
+                <div class="card card-compact bg-[#F4F7FF] rounded-lg p-5 shadow-xl">
+                    <button class="btn w-2/4 my-2">Google LLC</button>
+                    <h3 class="text-xl my-2">Integrate OpenAI API</h3>
+                    <p class="bg-white p-4 rounded-lg m-2">Debug using Chrome DevTools, check for overlapping</p>
                     <div class="flex items-center justify-around gap-5 m-4">
                         <div class="text-xs">
                             <p>Deadline</p>
                             <h6>21 March 2025</h6>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="googlellc" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-base-100 shadow-xl">
-                    <button class="btn w-2/4 my-2">ShopEase</button>
-                    <h3 class="text-xl my-2">Fix Mobile Button Issue</h3>
-                    <p class="bg-white p-4 rounded-md m-2">Debug using Chrome DevTools, check for overlapping</p>
+                <div class="card card-compact bg-[#F4F7FF] rounded-lg p-5 shadow-xl">
+                    <button class="btn w-2/4 my-2">Glassdoor</button>
+                    <h3 class="text-xl my-2">Improve Job Searching</h3>
+                    <p class="bg-white p-4 rounded-lg m-2">Debug using Chrome DevTools, check for overlapping</p>
                     <div class="flex items-center justify-around gap-5 m-4">
                         <div class="text-xs">
                             <p>Deadline</p>
                             <h6>21 March 2025</h6>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="glassdoor" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -153,13 +157,18 @@
         </section>
 
         <!-- Activity Log section -->
-        <section class="col-span-3 text-center">
+        <section class="col-span-3 text-center bg-white rounded-lg">
             <div>
-                <img class="mx-auto" src="assets/activity.png" alt="">
-                <h5>Activity Log</h5>
+                <div>
+                    <div>
+                        <img class="mx-auto mt-5 w-7" src="assets/activity.png" alt="">
+                        <h5 class="mt-2">Activity Log</h5>
+                    </div>
+                    <button id="clearHistory" class="btn btn-primary my-5">Clear History</button>
+                </div>
             </div>
-            <div>
-                <button>Clear History</button>
+            <div id="activities">
+
             </div>
         </section>
     </main>
@@ -169,9 +178,11 @@
     <footer>
 
     </footer>
+
+
+    <script src="js/sharedFunction.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/main.js"></script>
-    <script src="tailwind.config.js"></script>
 </body>
 
 </html>
